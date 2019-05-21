@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+.landing-wrapper {
+    font-family: 'Open Sans Light';
+    background: url('background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.landing-wrapper img {
+    margin: 150px 0 200px;
+    width: 163px;
+    height: auto;
+}
+
+.landing-wrapper p{
+    font-size: 72px;
+    margin: 0 0 165px 0;
+    font-weight: 300;
+}
+
+.landing-wrapper a {
+    font-family: 'Open Sans Regular';
+    font-size: 22px;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 1px;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 1440px){
+    .landing-wrapper img {
+        margin: 90px 0 140px;
+    }
+    .landing-wrapper p{
+        margin: 0 0 105px 0;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .landing-wrapper {
+        background: url('background-mobile.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .landing-wrapper img {
+        margin: 50px 0 100px;
+    }
+    .landing-wrapper p{
+        font-size: 45px;
+        margin: 0 0 85px 0;
+    }
+    .landing-wrapper a {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .landing-wrapper img {
+        margin: 30px 0 70px;
+    }
+    .landing-wrapper p{
+        font-size: 40px;
+        margin: 0 0 70px 0;
+    }
+    .landing-wrapper a {
+        font-size: 18px;
+    }
+}
